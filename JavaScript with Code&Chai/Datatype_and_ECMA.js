@@ -11,7 +11,7 @@
  let issmart = true;
  let height; //undefined
  let weight = null; //null
- let id=Symbol("id"); //symbol
+ let id=Symbol("id"); //symbol.It is used to create unique identifiers
  let bigNumber=123456789012345678904831n; //bigint
 
 console.log(typeof age);
@@ -26,4 +26,11 @@ console.table([naam, age, issmart, height, weight, id, bigNumber]);
 height=1.75;
 console.log("Updated height:", height);
 console.table([naam, age, issmart, height, weight, id, bigNumber]);
+//  Creating a Symbol
+let id1 = Symbol("id");
+let id2 = Symbol("id");
+
+console.log(id1);          // Symbol(id)
+console.log(id2);          // Symbol(id)
+console.log(id1 === id2);  // false → Symbols are always unique
 
